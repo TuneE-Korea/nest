@@ -35,7 +35,6 @@ export class AppController {
   getIcecream(@Param('id') id: string): string {
     const icecreamMenu = ['바닐라', '초코', '딸기'];
     const result = icecreamMenu[+id] || '그런 맛 없음';
-    // const targetIce = icecreamMenu.find((v) => v.id == +id);
     return result;
   }
 
